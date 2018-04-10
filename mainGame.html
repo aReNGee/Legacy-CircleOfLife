@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Circle of Life</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script> 
+	</head>
+	<body>
+		<img id="bgimg" src="images/bg_spring.png" />
+		<div id="maingamespace">
+		</div>
+		<div id="title">
+			<div id="yearSeason">Current Season</div>
+			<div id="cWeather">the Weather</div>
+		</div>
+		<div id="sunspace">
+			<img id="seasonPic" src = "images/spring.png" alt = "doesn't work" />
+		</div>
+
+		<div>
+			<img id="questionPic" title="Give me a tip!" src="images/Q.png" onclick = "giveATip()" alt = "doesn't work"/>
+			<img id="exitPic" title="Exit game to main screen" src="images/X.png" onclick="exitGame()" alt = "doesn't work"/>
+		</div>
+		
+		<img id="dGuy" src = "images/Man_13.png" alt = "doesn't work"/>
+		<div id="info">	</div>
+		
+		<div id="buttoncontainer">
+			<button id="ritualRain" onclick="rainClick()">The Ritual of Rain</button> <br>
+			<button id="ritualSun" onclick="sunClick()">The Ritual of Sun</button> <br>
+			<button id="ritualWind" onclick="windClick()">The Ritual of Wind</button> <br>
+			<button id="ritualDeath" onclick="cloudClick()">The Ritual of Clouds</button> <br>
+		</div>
+		
+		<div class="bigpic" id="dTulip" onclick="setField1()">
+			<img class="images" id="tulip" src="images/Tulip_1.png"/>
+		</div>
+		<div class="bigpic" id="dTree" onclick="setField2()">
+			<img class="images" id="apple" src="images/Tree_1.png"/>
+		</div>
+		<div class="bigpic" id="dEvergreen" onclick="setField3()">
+			<img class="images" id="everG" src="images/Evergreen_1.png"/>
+		</div>
+		<img id="currentWeather" height="100px;" width="150px"; src="images/cloudy.png" />
+		<div id="hsscreen">
+			<div id="HSHeader"><h1>High Scores</h1></div>
+			<div id="scorescreen"></div>
+		</div>
+		<img id="closeSS" onclick="exitGame()" src="images/X.png" />
+	</body>
+</html>
